@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.wrapper{
+    margin:  0 auto;
+    width: 1200px;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+.obj{
+    width: 200px;
+    height: 200px;
+    animation: rotate 5s infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: perspective(600px) rotateY(0);
+        background-color: red;
+    }
+    25% {
+        transform:perspective(600px) rotateY(180deg);
+        background-color: orange;
+    }
+    50% {
+        transform:perspective(600px) rotateY(360deg);
+        background-color: green;
+    }
+    75% {
+        transform:perspective(600px) rotateY(540deg);
+        background-color: orange;
+    }
+    100% {
+        transform:perspective(600px) rotateY(700deg);
+        background-color: red;
+    }
+  }
